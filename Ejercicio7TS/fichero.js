@@ -11,6 +11,10 @@ function calculaNota(p1, p2, p3, final, trabajo) {
     return solucion;
 }
 //Imprimir ejercicio
+var p1 = "Las clificaciones son: Parical 1: 8, Parcial 2: 9, Parcial 3: 5, Examen final: 6, Trabajo final: 7";
+var parrafo11 = document.createElement('P');
+parrafo11.textContent = p1;
+document.body.appendChild(parrafo11);
 var resultado = calculaNota(8, 9, 5, 6, 7);
 console.log(resultado);
 var ej1 = 'La calificación final de la materia es: ' + resultado;
