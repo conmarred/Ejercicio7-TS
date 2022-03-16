@@ -1,0 +1,8 @@
+
+//Para que se compile automáticamente
+
+{
+  "compilerOptions": {
+    "target": "es6"
+  }
+}
