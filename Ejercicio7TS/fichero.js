@@ -30,18 +30,18 @@ document.body.appendChild(cabecera2H1);
 //Array con varios nombres de videojuegos
 var videojuegos = ["Pokemon", "Mario", "Animal Crossing"];
 function imprimeJuegos() {
-    var juegos = ["Pokemon", "Mario", "Animal Crossing"];
+    var juegos = ["Pokemon", "Mario Bros", "Animal Crossing", "Mario Kart", "Nintendogs"];
     var resultado = [];
     for (var _i = 0, juegos_1 = juegos; _i < juegos_1.length; _i++) {
         var item = juegos_1[_i];
-        if (item !== "Mario") {
+        if (!item.includes("Mario")) {
             resultado.push(item);
         }
     }
     return resultado;
 }
 //Imprimir ejercicio
-var juegos = ["Pokemon", "Mario", "Animal Crossing"];
+var juegos = ["Pokemon", "Mario Bros", "Animal Crossing", "Mario Kart", "Nintendogs"];
 var lista = 'La lista incial es: ' + juegos;
 var parrafop = document.createElement('P');
 parrafop.textContent = lista;

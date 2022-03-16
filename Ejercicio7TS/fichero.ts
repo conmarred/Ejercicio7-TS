@@ -36,18 +36,19 @@ document.body.appendChild(cabecera2H1);
 var videojuegos = ["Pokemon", "Mario", "Animal Crossing"];
 
 function imprimeJuegos(){
-    let juegos : string[] = ["Pokemon", "Mario", "Animal Crossing"]
+    let juegos : string[] = ["Pokemon", "Mario Bros", "Animal Crossing", "Mario Kart", "Nintendogs"]
     let resultado : string[] = []
     for(let item of juegos){
-        if(item !== "Mario"){
+        if(!item.includes("Mario")){
             resultado.push(item)
         }
     }
     return resultado
 }
 
+
 //Imprimir ejercicio
-let juegos : string[] = ["Pokemon", "Mario", "Animal Crossing"]
+let juegos : string[] = ["Pokemon", "Mario Bros", "Animal Crossing", "Mario Kart", "Nintendogs"]
 let lista: string = 'La lista incial es: ' + juegos;
 let parrafop = document.createElement('P');
 parrafop.textContent = lista
